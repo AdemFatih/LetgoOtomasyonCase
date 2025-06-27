@@ -77,6 +77,25 @@ public class LetgoTest {
                     AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Fiyat\"]")));
             fiyatFiltreButon.click();
 
+            /* Bu satırları yorumdan çıkararsanız Filtre Ekranında 2 switch i ON yapar. Cüzdanım Güvende İlanları switch butonu ON yapar
+            //Appium inspector da Bu elementin swtich kısmının elementi yok, yazıya tıklayınca switch değişmiyor, bu yüzden x,y koordinat ile tıkladım
+            PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+            Sequence tap = new Sequence(finger, 1);
+            tap.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 925, 541));
+            tap.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+            tap.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+            driver.perform(List.of(tap));
+
+            Thread.sleep(3000);
+
+            // Ücretsiz Kargo switch butonu ON yapar
+            //Appium inspector da Bu elementin swtich kısmının elementi yok, yazıya tıklayınca switch değişmiyor, bu yüzden x,y koordinat ile tıkladım
+            PointerInput finger2 = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+            Sequence tap2 = new Sequence(finger, 1);
+            tap2.addAction(finger2.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 918, 734));
+            tap2.addAction(finger2.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+            tap2.addAction(finger2.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+            driver.perform(List.of(tap2));  */
 
             System.out.println("Fiyat aralığı belirleniyor: 5000 - 15000 TL");
             // "En Düşük" isimli box a send keys ile text gönderir / xpath diğer elementlere göre daha stabil olduğu için bunu kullandım
